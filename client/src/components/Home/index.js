@@ -136,8 +136,8 @@ const Nav = (props) => {
                 ))}       
             </List>
             ): (<h3>
-                    <Link to="/home/:id">Graduation Party:  Saturday, October 27, 2018</Link> <br></br>
-                    <Link to="/home/:id">Princess | Taylor Wedding:  Monday, April 1, 2019</Link><br></br>
+                    <Link to="/home/:id">Graduation Party:  Saturday, October 27, 2018</Link> <br></br><br></br>
+                    <Link to="/home/:id">Princess | Taylor Wedding:  Monday, April 1, 2019</Link><br></br><br></br>
                     <Link to="/home/:id">Hack the Planet: Friday, August 32, 2020</Link>
                 </h3>)}
             </Col>

@@ -7,7 +7,7 @@ const SignUp = (props)=> {
 
 		<div>
 
-			 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     		<span className="navbar-brand">Sign Up</span>
 			<span className="text-white">
 			{/* <h1>SIGN UP</h1> */}
@@ -20,9 +20,15 @@ const SignUp = (props)=> {
 				<input name='password' type='password' value = {props.password} onChange = {props.handleChange} />
 			
 				<button type = 'submit' name = "/auth/signup" onClick = {props.handleSubmit}>Sign Up</button>
-			</form></span>
-			<Link to = "/" >Go to sign in</Link>
+			</form>
+			</span>
+			<Link to = "/" >Go Back To Sign In</Link>
   			</nav>
+			{/* <img src={require("../imageTwo.jpeg")} /> */}
+			<div className="title">
+			<h1>Event Assistant</h1><br></br><br></br>
+			<h2>Plan Your Best Event Ever!</h2>
+			</div>
 		</div>
 	);
 };

@@ -3,6 +3,7 @@ import "./style.css";
 import {Link} from 'react-router-dom';
 
 const SignIn = (props)=> {
+	
 	return (
 		<div>
 			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -20,8 +21,12 @@ const SignIn = (props)=> {
 				<button type = 'submit' name = "/auth/signin" onClick = {props.handleSubmit}>Sign In</button>
 			</form>
 			</span>
-			<Link to = "/signup" >      Go to sign up</Link>
+			<Link to = "/signup" >      Click Here To Sign UP</Link>
 			</nav>
+			<div className="title">
+			<h1>Event Assistant</h1><br></br><br></br>
+			<h2>Plan Your Best Event Ever!</h2>
+			</div>
 		</div>
 	);
 };
