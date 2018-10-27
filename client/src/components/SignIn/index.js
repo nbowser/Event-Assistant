@@ -24,8 +24,8 @@ const SignIn = (props)=> {
 			<Link to = "/signup" >      Click Here To Sign UP</Link>
 			</nav>
 			<div className="title">
-			<h1>Event Assistant</h1><br></br><br></br>
-			<h2>Plan Your Best Event Ever!</h2>
+			<h1 className="one">Event Assistant</h1><br></br><br></br>
+			<h2 className="two">Plan Your Best Event Ever!</h2>
 			</div>
 		</div>
 	);

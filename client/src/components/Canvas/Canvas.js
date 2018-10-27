@@ -63,7 +63,7 @@ class Canvas extends React.Component {
             {/* <button onClick=</button> */}
             <button onClick={this.savePlan}>Save</button>
               <SketchField width='100%' 
-                         height='810px' 
+                         height='820px' 
                          tool={this.state.tool} 
                          lineColor='black'
                          lineWidth={3}/>

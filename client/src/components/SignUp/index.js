@@ -26,8 +26,8 @@ const SignUp = (props)=> {
   			</nav>
 			{/* <img src={require("../imageTwo.jpeg")} /> */}
 			<div className="title">
-			<h1>Event Assistant</h1><br></br><br></br>
-			<h2>Plan Your Best Event Ever!</h2>
+			<h1 className="one">Event Assistant</h1><br></br><br></br>
+			<h2 className="two">Plan Your Best Event Ever!</h2>
 			</div>
 		</div>
 	);

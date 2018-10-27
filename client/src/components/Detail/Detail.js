@@ -157,7 +157,7 @@ class Detail extends Component {
             </form>
           </Col>
           <Col size="md-6">
-            <h1>Outline:</h1>
+            <h1>Outline</h1>
             <h5>Venue:</h5>
             Four Seasons Resort Orlando at Walt Disney World
             <h5>Address:</h5>
