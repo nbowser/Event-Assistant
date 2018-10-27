@@ -4,18 +4,25 @@ import {Link} from 'react-router-dom';
 
 const SignUp = (props)=> {
 	return (
+
 		<div>
-			<h1>SIGN UP</h1>
-			<Link to = "/" >Go to sign in</Link>
+
+			 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    		<span className="navbar-brand">Sign Up</span>
+			<span className="text-white">
+			{/* <h1>SIGN UP</h1> */}
+			
 			<form>
-				<label>Email</label><br/>
+				<label>Email</label>
 				<input value = {props.username} onChange = {props.handleChange} name='username' type='email' placeholder = 'example@email.com'/>
-				<br />
-				<label>Password</label><br/>
+				
+				<label>Password</label>
 				<input name='password' type='password' value = {props.password} onChange = {props.handleChange} />
-				<br />
+			
 				<button type = 'submit' name = "/auth/signup" onClick = {props.handleSubmit}>Sign Up</button>
-			</form>
+			</form></span>
+			<Link to = "/" >Go to sign in</Link>
+  			</nav>
 		</div>
 	);
 };

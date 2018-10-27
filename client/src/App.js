@@ -120,22 +120,22 @@ class App extends Component {
           } 
         }
         }/>
-        <Route exact path = "/home/:id" render = {()=> {
+          <Route exact path = "/home/:id" render = {()=> {
           if(!loggedIn){
-            return <Redirect to = "/home/:id" />
+            return <Redirect to = "/" />
           } else {
             return <Detail handleLogout = {this.handleLogout} auth = { this.state.auth }/>
           } 
         }
-        }/>
-        <Route exact path = "/canvas" render = {()=> {
+        }/>  <Route exact path = "/canvas" render = {()=> {
           if(!loggedIn){
-            return <Redirect to = "/canvas" />
+            return <Redirect to = "/" />
           } else {
             return <Canvas handleLogout = {this.handleLogout} auth = { this.state.auth }/>
           } 
         }
         }/>
+      
         </div>
       </Router>
     );

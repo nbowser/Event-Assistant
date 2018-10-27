@@ -19,16 +19,17 @@ import API from "../../utils/API";
 // 	);
 // };
 
-const Nav = (props) => (
+const Nav = (props) => {
+  return (
     <nav className="navbar navbar-dark bg-dark">
       <span className="navbar-brand" href="#">Event Assistant</span>
       <span className="text-white"></span>
       {/* <Link to="/home/:id">Details</Link> */}
       <Link to="/auth/logout">Logout</Link>
-      {/* <button onClick = {props.handleLogout}>Log Out</button> */}
+      {/* <button type= "submit" onClick = {props.handleLogout}>Log Out</button> */}
     </nav>
   );
-
+};
   class Home extends Component {
    
     state = {
@@ -135,10 +136,10 @@ const Nav = (props) => (
                 ))}       
             </List>
             ): (<h3>
-                   <Link to="/home/:id">Coding Convention</Link> <br></br>
-                    <Link to="/home/:id">Princess | Taylor Wedding:  Saturday October 27, 2018
-                    </Link><br></br>
-                    <Link to="/home/:id">Graduation Party</Link></h3>)}
+                    <Link to="/home/:id">Graduation Party:  Saturday, October 27, 2018</Link> <br></br>
+                    <Link to="/home/:id">Princess | Taylor Wedding:  Monday, April 1, 2019</Link><br></br>
+                    <Link to="/home/:id">Hack the Planet: Friday, August 32, 2020</Link>
+                </h3>)}
             </Col>
             
             </Row>

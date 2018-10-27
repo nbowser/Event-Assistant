@@ -9,7 +9,7 @@ const Nav = (props) => (
       <span className="text-white"></span>      
       <Link to="/home/:id">Details</Link>
       <Link to="/logout">Logout</Link>
-      <button onClick = {props.handleLogout}>Log Out</button>
+      {/* <button onClick = {props.handleLogout}>Log Out</button> */}
     </nav>
   );
 
