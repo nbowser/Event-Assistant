@@ -12,10 +12,10 @@ const Nav = (props) => (
   <nav className="navbar navbar-dark bg-dark">
     <span className="navbar-brand" href="#">Event Assistant</span>
     <span className="text-white"></span>
-    <Link to="/home">Main</Link>
+    <Link to="/home">Home</Link>
     <Link to="/canvas">Floor Plan</Link>
     <Link to="/auth/logout">Log out</Link>
-    <button onClick = {props.handleLogout}>Log Out</button> 
+    {/* <button onClick = {props.handleLogout}>Log Out</button>  */}
   </nav>
 );
 
@@ -44,6 +44,7 @@ class Detail extends Component {
     city: "",
     state: "",
     zip: "",
+    phone: "",
     guestCount: "",
     schedule: "",
     catering: "",
@@ -110,6 +111,12 @@ class Detail extends Component {
                 name="zip"
                 placeholder="Zip"
               />
+               <Input
+                value={this.state.phone}
+                onChange={this.handleInputChange}
+                name="phone"
+                placeholder="Phone"
+              />
               </div>
               <Input
                 value={this.state.guestCount}
@@ -149,6 +156,33 @@ class Detail extends Component {
               </FormBtn>
             </form>
           </Col>
+          <Col size="md-6">
+            <h1>Outline:</h1>
+            <h5>Venue:</h5>
+            Four Seasons Resort Orlando at Walt Disney World
+            <h5>Address:</h5>
+            10100 Dream Tree Boulevard
+            Orlando, FL
+            32836
+            <h5>Phone:</h5>
+            4073137777            
+            <h5>Guest Count:</h5>
+            50
+            <h5>Schedule:</h5>
+            starts: 12:00n (8hrs)
+            <h5>Catering:</h5>
+            Taco Bell
+            <h5>Entertainment:</h5>
+            Chumbawamba
+            <h5>Notes:</h5>
+            Have technicians set room for band at 6:00am.
+            Have hotel staff set the room at 9:00am.
+            Taco Bell staff in at 10:00am.
+            Band soundcheck at 10:30am.
+            Food arrives at 11:00am and remain heated.  Set food out at 11:45am
+            Band goes on at 2:00pm.  Intermission around 4:00pm.  Band back on around 5:30pm.
+            Technician plays background music during intermission.
+            </Col>
           </Row>
           </Container>
           </div>

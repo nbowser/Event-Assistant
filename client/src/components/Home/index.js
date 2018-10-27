@@ -23,9 +23,9 @@ const Nav = (props) => (
     <nav className="navbar navbar-dark bg-dark">
       <span className="navbar-brand" href="#">Event Assistant</span>
       <span className="text-white"></span>
-      <Link to="/home/:id">Details</Link>
+      {/* <Link to="/home/:id">Details</Link> */}
       <Link to="/auth/logout">Logout</Link>
-      <button onClick = {props.handleLogout}>Log Out</button>
+      {/* <button onClick = {props.handleLogout}>Log Out</button> */}
     </nav>
   );
 
@@ -130,17 +130,23 @@ const Nav = (props) => (
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => this.deleteEvent(user._id)} />
+                 
                   </ListItem>
                 ))}       
             </List>
-            ): (<h3>:</h3>)}
+            ): (<h3>
+                   <Link to="/home/:id">Coding Convention</Link> <br></br>
+                    <Link to="/home/:id">Princess | Taylor Wedding:  Saturday October 27, 2018
+                    </Link><br></br>
+                    <Link to="/home/:id">Graduation Party</Link></h3>)}
             </Col>
+            
             </Row>
 
             <Row>
               <Col size="md-4">
                   <ul>
-                  <h2>Other options</h2>
+                  <h2>Addition options</h2>
                     {/* <li>Rolodex</li> */}
                     <li><Link to="/rolodex">Rolodex</Link></li>
                     {/* <li>Post Event</li> */}
@@ -150,6 +156,7 @@ const Nav = (props) => (
             </Col>
           </Row>
         </Container>
+        {/* < Nav /> */}
         </div>
       );
      }
